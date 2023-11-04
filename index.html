@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>curve drawer</title>
+    <link rel="stylesheet" href="common.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+        <div id="toggleOverlay " class="btn toggle-btn">
+      <div class="btn-outline btn-outline-1"></div>
+      <div class="btn-outline btn-outline-2"></div>
+      <div class="hamburger">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="wines">
+      <div class="wrapper">
+        <svg
+        class="transition"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        >
+     <path
+          class="path"
+          stroke="#11111"
+          fill="#11111"
+          stroke-width="2px"
+          dur="10s"
+          vector-effect="non-scaling-stroke"
+          d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+        />
+        <animateMotion dur="10s"
+        repeatCount="indefinite"
+        >
+        <mpath xlink:href="#path">
+        </animateMotion >
+     <!-- <div id="wrap">
+        <div class="block">
+          <div class="product">
+              <img src="https://placehold.jp/150x150.png" alt="">
+          </div>
+        </div>
+         <div class="block">
+          <div class="product">
+              <img src="https://placehold.jp/150x150.png" alt="">
+          </div>
+        </div>
+         <div class="block">
+          <div class="product">
+              <img src="https://placehold.jp/150x150.png" alt="">
+          </div>
+        </div>
+         <div class="block">
+          <div class="product">
+              <img src="https://placehold.jp/150x150.png" alt="">
+          </div>
+        </div>
+       </div> -->
+         <span class="container">
+        <span class="left">
+          <a href="#" class="text is-text">home</a>
+          <a href="#" class="text is-text">about</a>
+          <a href="#" class="text is-text">recruit</a>
+          <a href="#" class="text is-text">contact</a>
+        </span>
+    </span>
+        </svg>
+           <svg
+        class="transition"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        >
+     <path
+          class="path2"
+          stroke="#fff"
+          fill="#fff"
+          stroke-width="2px"
+          dur="10s"
+          vector-effect="non-scaling-stroke"
+          d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+        />
+        <animateMotion dur="10s"
+        repeatCount="indefinite"
+        >
+        <mpath xlink:href="#path">
+        </animateMotion >
+        </svg>
+      </div>
+    </div>
+  <div class="container">
+      <p class="heading">svgでアニメーション</p>
+    </div>
+  </body>
+</html>
